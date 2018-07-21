@@ -8,13 +8,11 @@
     {{ end }}
     <h4 id="about-card-name">{{ .Site.Author.name }}</h4>
     {{ with .Site.Author.bio }}
-      <div id="about-card-bio">{{ . | markdownify }}</div>
+      <div id="about-card-bio">{{ . }}</div>
     {{ end }}
     {{ with .Site.Author.job }}
       <div id="about-card-job">
-        <i class="fa fa-briefcase"></i>
-        <br/>
-        {{ . | markdownify }}
+        {{ . }}
       </div>
     {{ end }}
     {{ with .Site.Author.location }}
@@ -24,5 +22,14 @@
         {{ . }}
       </div>
     {{ end }}
+    <div>
+        <table style="width: 20px;" align="center">
+          <thead>
+            <td><a href="https://twitter.com/reezaras"><i class="fa fa-lg fa-twitter"></i></a></td>
+            <td><a href="https://www.linkedin.com/in/rezarasouli"><i class="fa fa-lg fa-linkedin"></i></a></td>
+          </thead> 
+        </table>
+    </div>
+    
   </div>
 </div>
